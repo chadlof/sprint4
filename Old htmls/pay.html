@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+        <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .sliderimg{
+            margin-left: 33%;
+            
+        }
+        #topNav{
+            height: 10%;
+            padding: 1%;
+           
+        }
+        .nav{
+            padding-left: 10%
+        }
+        .fill{
+          background: radial-gradient(circle,  #ffffff, #666666,  #262626); 
+        }
+        #logo{
+            margin-top:-1%;
+        }
+        .carCap{
+            padding-top: 50%;
+        }
+        #body{
+           
+        }
+        #mainContent{
+            
+        }
+        #footer{
+            background-color: #222;
+            height: 100px;
+            width: 1500px;
+           
+        }
+        #ftLinks{
+           
+            list-style-type: none;
+        }
+        .ftLinks{
+        
+            text-decoration: none;
+            color: #9d9d9d;
+        }
+        /**original CSS**/
+        
+         #hostContainer{
+            width: 70%;
+            height: 500px;
+            padding: 5%;
+            
+            /*border: solid thin green;*/
+            
+        }
+        #description{
+            float: left;
+            width: 45%;
+            margin: auto;*
+            text-align: left;
+            height: 100%;
+            
+            /*border: solid thin red;*/
+           
+
+            }
+        #dropContainer{
+            float: left;
+            width: 10%;
+            height: 100%;
+            margin: auto;
+            padding-left: 5%;
+            /*border: solid thin red;*/
+            
+            
+        }
+        #picContainer{
+            float: right;
+            width: 10%;
+            height: 100%;
+            padding-right: 10%;
+        }
+        .dropPic{
+            width: 100%;
+            float: left;
+            margin-left: 6%;
+            padding: 5%;
+            /*border: solid thin red;*/
+         
+            
+        }
+        
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding-left: 14%;
+            padding-top: 10%
+    
+                }
+        #buy{
+           display:none;
+             
+        }
+
+        
+        
+        
+    /* Dropdown Button */
+        .dropbtn {
+            background-color: #cc0000;
+            color: white;
+            margin: auto;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            width: 120%;
+           
+        }
+        
+/* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color:darkred;
+        }
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+/* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+/* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color:darkgrey}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+        
+        #buttonHolder{
+            width: 10%;
+            float: left;
+            /*border: solid thin red;*/
+            margin-left: 3%;
+        }
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="topNav" role="navigation">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+           <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"><a href="about.html">About us</a></span>
+                    <span class="icon-bar"><a href="login.html">Login / New User</a></span>
+                    <span class="icon-bar"><a href="index.html"><img id="logo" src="images/alc4.png" alt="Alcatraz Security Firm" height="161" width="350"></a></span>
+                </button>-->
+            
+               
+               
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+         <a id="logo" class="navbar-brand" href="index.html">
+                    <img src="images/alc4.png" alt="Alcatraz Security Firm" height="50" ></a>
+        
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul  class="nav navbar-nav">
+                <li><a href="software.html">Software</a></li>
+                <li><a href="consultation.html">Consultation</a></li>
+                <li><a href="pay.html">Payment Acceptance</a></li>
+                <li><a href="hosting.html">Hosting Solutions</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="login.html">Login New User</a></li>
+                </ul>
+            
+                
+            
+            <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        
+        <!-- /.container -->
+    </nav>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                 <div class="fill" >
+                <div class="fill" class="sliderImg">
+                    <img class="sliderimg" src="images/security.png" height="100%" />
+                </div>
+               
+                <div class="carousel-caption carCap">
+                    <h2>Bringing coprorate grade security to everyone</h2>
+                </div>
+                 </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" >
+                    <div class="fill" class="sliderImg">
+                    <img class="sliderimg" src="images/adblocker.jpeg" height="100%" />
+                </div>
+                     
+                <div class="carousel-caption carCap carCap">
+                    <h2>Featured Products of the Week</h2>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+               <div class="fill" >
+                    <div class="fill" class="sliderImg">
+                    <img class="sliderimg" src="images/hosting3.jpg" height="100%" />
+                </div>
+                <div class="carousel-caption carCap">
+                    <!--<h2>Caption 3</h2>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div id="body" class="container">
+
+        <div id="mainContent" class="row">
+            <       <article id="hostContainer">
+            <article id="description">
+                <p>Alcatraz Security Firm offers premier level secure payment methods for your website or web application. <br>
+                    Select an option from the right to see what services we can offer you.
+
+                </p>
+               <button type="button"id="buy">Buy Now!</button>  
+            </article>
+            
+        <div id="dropContainer">
+            <div id="buttonHolder">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Options</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a id="link1">PayPal</a>
+                    <a id="link2">Square</a>
+                    <a id="link3">Apple Pay</a>
+                      <a id="link4">Google Wallet</a>
+                      <a id="link5">Samsung Pay</a>
+                </div><!--myDropdown-->
+                </div><!--dropdown-->
+            </div>
+            
+            
+        </div><!--dropContainer-->
+        <div id="picContainer">
+            <div id="dropPic">
+                <img class="dropPic" src="images/payPal.png">
+                <img class="dropPic" src="images/square.png">
+                <img class="dropPic" src="images/applePay.png">
+                <img class="dropPic" style="width:120%"src="images/googleWallet.png">
+                <img class="dropPic" style="width:80%" src="images/samsungPay.png">
+            </div><!--dropPic-->
+        </div><!--picContainer-->
+         
+     
+        
+        </article><!--hostContainer-->
+            </div><!--mainContent-->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer id="footer">
+        <nav>
+            <ul id="ftLinks" >
+                <li><a class="ftLinks" href="software.html">Software</a></li>
+                <li><a class="ftLinks" href="consultation.html">Consultation</a></li>
+                <li><a class="ftLinks" href="pay.html">Payment Acceptance</a></li>
+                <li><a class="ftLinks" href="hosting.html">Hosting Solutions</a></li>
+                <li><a class="ftLinks" href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>     
+    </footer>
+
+    </div><!--body-->
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        
+            <script>
+          /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   document.getElementById("link1").addEventListener("click", function(){
+         var payPal= "PayPal<br><br>Purchase protection you need, peace of mind you deserve<br><br>Keeping your financial information secure is absolutely essential when buying online. Whether its ecommerce, sending money or buying with debit and credit cards online, trust PayPal's Purchase Protection program to help keep your financial information secure for your PayPal purchases.";
+       
+           /*document.getElementById("buy").innerHTML=unlimited;*/
+       
+        document.getElementById("description").innerHTML=payPal;
+        document.getElementById("buy").style.display =  "block";
+           });
+        
+       
+       document.getElementById("link2").addEventListener("click", function(){
+         var square= "Square<br><br>Accept credit cards anywhere. Sign up and we’ll send you a free reader.<br><br>Get a free Square magstripe reader to swipe credit cards anywhere. Get our newest reader to take chip cards and NFC payments—or slip an iPad into Square Stand to make a countertop point of sale.";
+        document.getElementById("description").innerHTML=square;
+               });
+           
+           document.getElementById("link3").addEventListener("click", function(){
+         var applePay= "Apple Pay<br><br>Make secure purchases in stores, in apps, and now on the web. <br><br>Apple Pay is simple to use and works with the devices you use every day. Easily pay with your debit cards and credit cards with just a touch. And because your card details are never shared by Apple when you use Apple Pay, making purchases with your iPhone, Apple Watch, iPad, and Mac is the safer, more private way to pay.";
+        document.getElementById("description").innerHTML=applePay;
+    });
+           document.getElementById("link4").addEventListener("click", function(){
+         var googleWallet= "Google Wallet<br><br>Send and receive money instantly<br><br>Send money to anyone in the US using an email address or phone number. It's fast, easy, and free to send directly from your debit card, bank account, or Wallet Balance. You can do all this in the Google Wallet app, or, if you’re on desktop, you can also send and request money in Gmail.<br>When you receive money, you can quickly cash out to your bank account using your debit card, and get access to your money within minutes ";
+        document.getElementById("description").innerHTML=googleWallet;
+    });
+           document.getElementById("link5").addEventListener("click", function(){
+         var samsungPay = "Samsung Pay<br><br>Turn your phone into your wallet.<br><br>Use your credit, debit, gift, membership and rewards cards on Samsung Pay. It’s accepted at your favorite spots to make checkouts easy and deals hard to miss.1";
+        document.getElementById("description").innerHTML=samsungPay;
+    });
+    
+        </script>    
+
+</body>
+
+</html>

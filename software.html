@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    <!--Alcatraz CSS-->
+    <link href="css/alcatraz.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+    
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        
+        
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="header">
+        <script type="text/javascript" src="js/header.js"></script>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="body" class="containerBody">
+        <div class="content" id="main">
+
+            <article id="hostContainer">
+                <article id="description">
+                    <p>We pride ourselves in developing the very foremost in networking software. <br/><br />For just an annual payment of $120, you can have exclusive access to all three of these Fortune 500 tier programs. Or purchase them separately for the yearly price listed in the description. <br/><br />Please select from the options on the right.
+                    </p>
+                </article>
+
+            <div id="dropContainer">
+                <div id="buttonHolder">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Options</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a id="link1">SPYWARE-B-GONE</a>
+                        <a id="link2">MALWARE-AWAY</a>
+                        <a id="link3">DEFRAGMENTER 2017</a>
+                    </div><!--myDropdown-->
+                    </div><!--dropdown-->
+                </div>
+
+                <button type="button"id="buy"></button>
+            </div><!--dropContainer-->
+            <div id="dropPic">
+                <img src="images/padlock.jpg" id="onePic">
+            </div><!--dropPic-->
+
+
+
+            </article><!--hostContainer-->
+        </div>
+
+       
+    </div><!--body-->
+        
+        
+    <div id="footer">
+        <script type="text/javascript" src="js/footer.js"></script>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        
+    <script src="js/products.js"></script>
+    <script>
+         
+                  /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        } // end of myFunction
+        
+        
+
+        // Close the dropdown menu if the user clicks outside of it
+       
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }//end of window.onclick function
+        
+        
+           
+
+
+
+
+           document.getElementById("link1").addEventListener("click", function()
+                {            
+                var unlimited = products.data[0].name+"<br/><br/>"+products.data[0].desc;
+                document.getElementById("buy").style.visibility = 'hidden';
+
+                document.getElementById("description").innerHTML=unlimited;
+                document.getElementById("buy").style.visibility = 'visible';
+                document.getElementById("buy").innerHTML = "BUY NOW!<br>"+products.data[0].price;
+                });
+
+
+           document.getElementById("link2").addEventListener("click", function(){
+                var unlimitedPlus = products.data[1].name+"<br/><br/>"+products.data[1].desc;
+
+                document.getElementById("description").innerHTML=unlimitedPlus;
+                document.getElementById("buy").style.visibility = 'visible';
+               document.getElementById("buy").innerHTML = "BUY NOW!<br>"+products.data[1].price;
+                   });
+
+           document.getElementById("link3").addEventListener("click", function(){
+               var unlimitedPro = products.data[2].name+"<br/><br/>"+products.data[2].desc;
+
+                document.getElementById("description").innerHTML=unlimitedPro;
+                document.getElementById("buy").style.visibility = 'visible';
+               document.getElementById("buy").innerHTML = "BUY NOW!<br>"+products.data[2].price;
+            });
+                function popup(){
+
+
+                    window.alert("Thank you purchsing from Alcatraz Security Firm"); 
+
+
+                }
+                document.getElementById("buy").addEventListener("click",popup, false);
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    <!--Alcatraz CSS-->
+    <link href="css/alcatraz.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+    
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="header">
+        <script type="text/javascript" src="js/header.js"></script>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="body" class="container">
+        <div class="content" id="faqContent">
+            <h2>Frequently Asked Questions</h3>
+            <ul id="faqList">
+
+            </ul>
+
+        </div>
+       
+    </div><!--body-->
+        
+        
+    <div id="footer">
+        <script type="text/javascript" src="js/footer.js"></script>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        <script src="js/faq.js"></script>
+    <script type="text/javascript">
+                  var prev_page = document.referrer;
+    </script>
+    <script type="text/javascript">
+        var prev_page = document.referrer;
+        switch(prev_page) {
+            case 'login.html':   //say this page1
+                document.getElementById('login').innerText = "Logged In"
+        }
+        //populate the FAQ list
+        var fileLength = data.questions.length;
+        var output = document.getElementById("faqList");
+        for(i=0;i<fileLength;i++){
+            output.innerHTML = output.innerHTML.concat("<li class='question'>"+data.questions[i].question+"</li><li class='answer'>"+data.questions[i].answer+"</li>");
+        }
+        
+        
+        
+    </script>
+   
+    <script>
+        
+
+$('.answer').hide();
+
+$('.question').click(function() {
+    if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
+        $(this).next('.answer').slideUp();
+    } else {
+        $(this).addClass('open');
+        $(this).next('.answer').slideDown();
+    }
+}); 
+    </script>
+
+</body>
+
+</html>

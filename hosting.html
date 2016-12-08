@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    <!--Alcatraz CSS-->
+    <link href="css/alcatraz.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+    
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        
+        
+        
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="header">
+        <script type="text/javascript" src="js/header.js"></script>
+    </nav>
+    
+    <!-- Page Content -->
+    <div id="body" class="container">
+        <div class="content" id="main">
+        
+            <article class="container" id="hostContainer">
+                <article id="description">
+                <p>Alcatraz Security Firm has premier level hosting for your website or web application. 
+                    Select an option from the right to see what services we can offer you.
+                </p>
+
+            </article>
+
+            <div id="dropContainer">
+                <div id="buttonHolder">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Options</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a id="link1">UNLIMITED</a>
+                        <a id="link2">UNLIMITED PLUS</a>
+                        <a id="link3">UNLIMITED PRO</a>
+                      </div><!--myDropdown-->
+                    </div><!--dropdown-->
+                </div>
+
+                <button type="button" id="buy">Buy Now!</button>
+            </div><!--dropContainer-->
+            <div id="dropPic">
+                <img id="images" src="images/racks2.jpg">
+            </div><!--dropPic-->
+
+
+
+            </article><!--hostContainer-->
+        </div><!--container-->
+       
+    </div><!--body-->
+        
+        
+    <div id="footer">
+        <script type="text/javascript" src="js/footer.js"></script>
+    </div>
+    
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+         <script>
+          /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    var check = "&#10003";
+    check = check.fontcolor("#ff0000");
+    //check = checl + check.fontSize("30");
+             
+   document.getElementById("link1").addEventListener("click", function(){
+         var unlimited = "UNLIMITED<br><br>"+check+" Security with SSL Certificate<br>"+check+" Unlimited Webspace<br>"+check+" Unlimited Websites<br>"+check+" 20 Databases<br>"+check+" (1 GB on SSD)<br>"+check+" 1 FREE Domain Included<br>"+check+" INCLUDED 24/7 Support<br>"+check+" Up to 600 MB RAM<br>"+check+" Over 120 Click&Build and Web Apps<br><br> $4.99/Month";
+       
+           /*document.getElementById("buy").innerHTML=unlimited;*/
+       
+        document.getElementById("description").innerHTML=unlimited;
+        document.getElementById("buy").style.visibility = 'visible';
+           });
+        
+       
+       document.getElementById("link2").addEventListener("click", function(){
+         var unlimitedPlus = "UNLIMITED PLUS <br><br>"+check+" Security with SSL Certificate<br>"+check+" Unlimited Webspace<br>"+check+" Unlimited Websites<br>"+check+" Unlimited Databases<br>"+check+" (1 GB on SSD)<br>"+check+" 1 FREE Domain Included<br>"+check+" 24/7 Support<br>"+check+" Up to 1.2 GB RAM<br>"+check+" Over 120<br>"+check+" Click&Build and Web Apps<br>"+check+" Alcatraz SiteLock Basic<br>"+check+" Alcatraz CDN<br><br> $9.99/Month ";
+           
+           
+        document.getElementById("description").innerHTML=unlimitedPlus;
+           document.getElementById("buy").style.visibility = 'visible';
+               });
+           
+           document.getElementById("link3").addEventListener("click", function(){
+         var unlimitedPro = "UNLIMITED PRO <br><br>"+check+" Security with SSL Certificate<br>"+check+" Unlimited Webspace<br>"+check+" Unlimited Websites<br>"+check+" Unlimited Databases<br>"+check+" (1 GB on SSD)<br>"+check+" 1 FREE Domain Included<br>"+check+" 24/7 Support<br>"+check+" Up to 1.2 GB RAM<br>"+check+" Over 120<br>"+check+" Click&Build and Web Apps<br>"+check+" Alcatraz SiteLock Basic<br>"+check+" Alcatraz CDN with Railgun<br>"+check+" Alcatraz App Expert Support<br><br> $12.99/Month ";
+               
+        document.getElementById("description").innerHTML=unlimitedPro;
+               document.getElementById("buy").style.visibility = 'visible';
+    });
+    function popup(){
+            
+            
+            window.alert("Thank you purchsing from Alcatraz Security Firm"); 
+            
+
+        }
+        document.getElementById("buy").addEventListener("click",popup, false);
+        </script>      
+    
+
+
+</body>
+
+</html>

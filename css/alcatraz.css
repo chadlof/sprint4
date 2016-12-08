@@ -1,0 +1,412 @@
+#pic {
+    float: left;
+}
+#iframeHolder {
+    overflow: hidden;
+    height: 1200px;
+}
+#iframeBody {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    border: none;
+}
+.sliderimg {
+    margin-left: 33%;
+}
+#topNav {
+    height: 12%;
+    padding: 1%;
+    padding-left: 12%;
+    font-size: 1.7em;
+    background-color: black;
+}
+.fill {
+    background: linear-gradient( rgba(38, 38, 38, .2), rgba(102, 102, 102, .1), rgba(255, 255, 255, .2));
+    
+}
+#logo {
+    margin-top: -1%;
+}
+.carCap {
+    padding-top: 50%;
+}
+body {
+    font-family: warsaw;
+    background-color: #fff;
+}
+#body {
+    
+} 
+#mainContent {
+    height: auto;
+}
+#footer {
+    background-color: #222;
+    height: 100px;
+    width: auto;
+    margin: 0%;
+    font-size: 1.05em;
+}
+#footer li a:hover{
+    text-decoration: none;
+    color: white;
+}
+#ftNav {
+    padding-top: 3%;
+    padding-left: 20%;
+}
+#ftLinks li {
+    padding-left: 6%;
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+
+}
+.ftlinks:hover{
+    text-decoration: none;
+    color: red;
+} 
+.ftLinks {
+    text-decoration: none;
+    color: #9d9d9d;
+    font-size: 1.5em;
+}
+#hamburgerBar {
+    background-color: black;
+}
+#fontAdjust {
+    font-size: 2.2vw;
+}
+#navLogo {
+    height: 65px;
+    margin-top: -20%;
+}
+#imgCenter {
+    margin-left: 33%;
+    margin-right: inherit;
+    height: 400px;
+}
+.nav li {
+    background-color: black;
+}
+/*         //Consultation content styles*/
+
+//Consultation content styles
+#consult {
+    width: 20%;
+    float: left;
+    font-size: 10em;
+    padding-top: 5%;
+}
+#description {
+    float: left;
+    width: 25%;
+    margin: auto;
+    height: 100%;
+    color: #222;
+    font-size: 1.4vw;
+    margin-left: 10%;
+}
+#pId{
+    float: left;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    color: #222;
+    font-size: 1.7vw;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+#consultContainer {
+    width: 90%;
+    height: 100%;
+    padding-top: 0%;
+    margin-left: 10%;
+    margin-bottom: 30%;
+}
+#visit {
+    width: auto;
+    height: 180%;
+    margin-bottom: 10%;
+}
+/*From about.html */
+
+#toparticle {
+    font-size: 1.5em;
+}
+#aboutUs {
+    font-size: 1.2em;
+}
+#aboutContent {
+    width: 50%;
+    margin-left: 27%;
+}
+/* end about html */
+/* from faq.html */
+
+.quest {
+    font-size: 1.8vw;
+}
+.answer {
+    padding-left: 2em;
+    /*visibility: hidden;*/
+}
+#faqList li {
+    display: block;
+}
+#faqContent {
+    margin-left: 20%;
+}
+.content {
+    margin-top: 5%;
+    font-family: warsaw;
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 5%;
+}
+.faqLink {
+    text-decoration: none;
+    color: inherit;
+}
+/* end of faq */
+/* from hosting.html */
+
+#hostContainer {
+    width: 70%;
+    /*height: 675px;*/
+    padding-top: 5%;
+    /*border: solid thin green;*/
+    
+    margin-left: 15%;
+}
+#description {
+    float: left;
+    width: 43%;
+    margin: auto;
+    height: 100%;
+    padding-right: 25px;
+    font-size: 1.25em;
+    /*border: solid thin red;*/
+}
+#dropContainer {
+    float: left;
+    width: 10%;
+    height: 100%;
+    margin: auto;
+    /*border: solid thin red;*/
+}
+#dropPic {
+    width: 10%;
+    float: left;
+    margin-left: 15%;
+    /*border: solid thin red;*/
+}
+/* end of hosting */
+/*  from index.html  */
+
+#title1 {
+    text-align: center;
+    margin: 3%;
+}
+#pic1 {
+    float: left;
+    margin-left: 20%;
+}
+#art1 {
+    float: right;
+    margin-right: 5%;
+}
+#title2 {
+    text-align: center;
+    margin-top: 20%;
+    margin: 3%;
+}
+#pic2 {
+    float: right;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+#art2 {
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+/* end of index */
+/* from login.html */
+
+#loginContent {
+    width: 50%;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    color: #9d9d9d;
+   /* text-shadow: 1px 1px 4px #9d9d9d;*/ 
+    font-family: warsaw;
+    font-size: 1.25vw;
+    height: 300px;
+    margin-top: 6%;
+    padding-top: 4%;
+    margin-bottom: 6%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 10px red);
+}
+#loginButton {
+    font-size: 1vw;
+    color: black;
+}
+input {
+    color: black;
+}
+/* end login */
+/* from pay.html */
+
+#dropContainer {
+    float: left;
+    width: 10%;
+    height: 100%;
+    margin: auto;
+    padding-left: 5%;
+    /*border: solid thin red;*/
+}
+#picContainer {
+    float: right;
+    width: 10%;
+    height: 100%;
+    /*padding-left: 10%;*/
+    margin-top: -1%;
+}
+.dropPic {
+    width: 100%;
+    float: left;
+    margin-left: 6%;
+    padding: 5%;
+    /*border: solid thin red;*/
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 14%;
+    padding-top: 10%
+}
+#buy {
+    visibility: hidden;
+    clear: both;
+    margin-top: 50%;
+    font-family: warsaw;
+    color: black;
+    font-size: 1vw;
+    width: 100%;
+     z-index:99;
+}
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #cc0000;
+    color: white;
+    margin: auto;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    width: 120%;
+}
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: darkred;
+}
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: darkgrey
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+#buttonHolder {
+    width: 10%;
+    float: left;
+    /*border: solid thin red;*/
+    
+    margin-left: 3%;
+}
+/* end pay.html */
+/* about.html */
+
+#toparticle {
+    font-size: 1.5em;
+}
+#images{
+    filter: drop-shadow(-8px 8px 10px red);
+    z-index: -1;
+}
+#imagesRight{
+    filter: drop-shadow(8px 8px 10px red);
+    z-index: -1;
+}
+#aboutContent {
+    width: 50%;
+    margin-left: 27%;
+}
+/* end of about.html */
+/* from software.html */
+
+#onePic {
+    width: 400%;
+    height: auto;
+    filter: drop-shadow(8px 8px 10px red);
+}
+.containerBody {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+ /***********************answerccording CSS********************/
+        .question {
+    position: relative;
+    border-bottom: 2px solid #4d4d4d;
+    background-color: #595959;
+            filter:drop-shadow(-8px 4px 5px #cc0000);
+
+            font-size: 1.1em;
+    color: white;
+    padding: 10px;
+    position: relative;
+            width: 70%;
+            border-radius: 4px;
+            cursor:pointer;
+
+}
+.question:before {
+    content: "\255E    ";}
+.question.open:before {
+    content: "\255F    ";
+}
+        .answer:before {
+    content: "\255A    ";
+}
+/* end of software */

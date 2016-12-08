@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    <!--Alcatraz CSS-->
+    <link href="css/alcatraz.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+    
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="header">
+        <script type="text/javascript" src="js/header.js"></script>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="body" class="container">
+        <div id="mainContent" class="row">
+           <article id="hostContainer">
+            <article id="pId">
+                Alcatraz Security Firm offers premier level secure payment methods for your website or web application. <br>
+                    Select an option from the right to see what services we can offer you.
+
+               
+               <button type="button"id="buy">Buy Now!</button>  
+            </article>
+            
+        <div id="dropContainer">
+            <div id="buttonHolder">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Options</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a id="link1">PayPal</a>
+                    <a id="link2">Square</a>
+                    <a id="link3">Apple Pay</a>
+                      <a id="link4">Google Wallet</a>
+                      <a id="link5">Samsung Pay</a>
+                </div><!--myDropdown-->
+                </div><!--dropdown-->
+            </div>
+            
+            
+        </div><!--dropContainer-->
+        <div id="picContainer">
+            <div id="dropPic">
+                <img class="dropPic" src="images/payPal.png" style="width:100px">
+                <img class="dropPic" src="images/square.png"style="width:100px">
+                <img class="dropPic" src="images/applePay.png"style="width:100px">
+                <img class="dropPic" src="images/googleWallet.png" style="width:100px">
+                <img class="dropPic" src="images/samsungPay.png" style="width:100px">
+            </div><!--dropPic-->
+        </div><!--picContainer-->
+         
+     
+        
+        </article><!--hostContainer-->
+            </div><!--mainContent-->
+       
+    </div><!--body-->
+        
+        
+    <div id="footer">
+        <script type="text/javascript" src="js/footer.js"></script>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        <script src="js/payment.js"></script>
+     <script>
+          /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    document.getElementById("link1").addEventListener("click", function(){       
+                var payPal= payments.data[0].name+"<br/><br/>"+payments.data[0].desc;       
+                document.getElementById("pId").innerHTML=payPal;
+                document.getElementById("buy").style.display =  "block";
+            });
+          
+        document.getElementById("link2").addEventListener("click", function(){
+            var square= payments.data[1].name+"<br/><br/>"+payments.data[1].desc;;
+            document.getElementById("pId").innerHTML=square;
+            });
+           
+        document.getElementById("link3").addEventListener("click", function(){
+            var applePay= payments.data[2].name+"<br/><br/>"+payments.data[2].desc;;
+            document.getElementById("pId").innerHTML=applePay;
+            });
+          
+        document.getElementById("link4").addEventListener("click", function(){
+            var googleWallet= payments.data[3].name+"<br/><br/>"+payments.data[3].desc;;
+            document.getElementById("pId").innerHTML=googleWallet;
+            });
+          
+        document.getElementById("link5").addEventListener("click", function(){
+            var samsungPay = payments.data[4].name+"<br/><br/>"+payments.data[4].desc;;
+            document.getElementById("pId").innerHTML=samsungPay;
+            });
+    
+        </script>    
+    
+
+
+</body>
+
+</html>

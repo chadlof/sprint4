@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Alcatraz Security Firm</title>
+    
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+    <!--Alcatraz CSS-->
+    <link href="css/alcatraz.css" rel="stylesheet">
+    
+          <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">-->
+    
+     <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/alc2.fw.png">
+    
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+   <nav id="header">
+        <script type="text/javascript" src="js/header.js"></script>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="body" class="container">
+        <div class="spacer">
+            <div id="loginContent">
+                <h3>Existing users please login</h3>
+                <form id="formPart" action="">
+                    User Name:  <input type="text" id="username" ><br/><br/>
+                    Password:  <input type="password" id="password" ><br/><br/>
+                </form>
+                <input id="loginButton" type="submit" value="Submit" onclick="loginFunc()">
+
+               <!-- <a id="newUser" href="newUser.html" >Click here if you are a new user</a>-->
+            </div>
+        </div>
+
+       
+    </div><!--body-->
+        
+        
+    <div id="footer">
+        <script type="text/javascript" src="js/footer.js"></script>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        <script src="js/loginFile.js"></script>
+    <script type="text/javascript">
+        
+        function loginFunc(){
+            var user = String(document.getElementById("username").value);
+            var pass = String(document.getElementById("password").value);
+            var found = 0;
+            var goodPass = 0;
+            
+            
+            for(i=0;i<loginFile.customers.length;i++){
+                
+                if(loginFile.customers[i].username == user)
+                {
+                    found = 1;
+                    //window.alert("found "+i);
+                }
+                
+                if(loginFile.customers[i].password == pass)
+                {
+                    goodPass = 1;
+                }   
+                if(goodPass == 1 && found == 1)
+                {
+                    window.alert("Thank you for logging in " + user);
+                    i=loginFile.customers.length;
+                    window.location = "index.html";
+                }
+               
+               
+            }
+            if(found ==0 || goodPass == 0){
+                window.alert("Invalid username or password");
+            }
+        }
+        
+        
+   /* <meta http-equiv="refresh" content="5;url=index.html">
+   code for the redirect page......add to teh redirect page*/
+    
+    </script>
+    
+
+</body>
+
+</html>
