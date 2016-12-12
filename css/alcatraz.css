@@ -81,6 +81,7 @@ body {
 #navLogo {
     height: 65px;
     margin-top: -20%;
+    max-width:100%;
 }
 #imgCenter {
     margin-left: 33%;

@@ -2858,6 +2858,9 @@ background-color:#ebcccc
 min-height:.01%;
 overflow-x:auto
 }
+
+/* mobile device ???? */
+
 @media screen and (max-width:767px)
 {
 .table-responsive
@@ -3019,6 +3022,10 @@ input[type=search]
 {
 -webkit-appearance:none
 }
+
+
+
+
 @media screen and (-webkit-min-device-pixel-ratio:0)
 {
 input[type=date].form-control,input[type=time].form-control,input[type=datetime-local].form-control,input[type=month].form-control
