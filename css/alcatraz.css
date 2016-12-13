@@ -563,10 +563,12 @@ input {
          
       }
       #art1{
+          float: left;
          margin-top: 4%;
           width: 375px;
           text-align: left;
           padding-right: 20px;
+          margin-left: 5%;
           
       }
       #pic2{
