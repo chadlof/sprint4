@@ -218,6 +218,7 @@ body {
 #art1 {
     float: right;
     margin-right: 5%;
+    width: 50%;
 }
 #title2 {
     text-align: center;
@@ -233,6 +234,7 @@ body {
     float: left;
     margin-left: 10%;
     margin-bottom: 10%;
+    width: 50%;
 }
 /* end of index */
 /* from login.html */
@@ -413,6 +415,9 @@ input {
 }
 #nerd{
     height: 150px;
+}
+.bodyFont{
+    font-size: 2em;
 }
 /* end of software */
 
@@ -660,6 +665,9 @@ input {
       }
       #formPart{
           font-size: 4vw !important;
+      }
+      #consultContainer{
+          margin-top: 20%;
       }
 }
 
