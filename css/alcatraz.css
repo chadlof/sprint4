@@ -1,5 +1,6 @@
 #pic {
     float: left;
+    height: 250px;
 }
 #iframeHolder {
     overflow: hidden;
@@ -278,7 +279,7 @@ input {
     margin-top: -1%;
 }
 .dropPic {
-    width: 100%;
+    width: 100px;
     float: left;
     margin-left: 6%;
     padding: 5%;
@@ -410,4 +411,272 @@ input {
         .answer:before {
     content: "\255A    ";
 }
+#nerd{
+    height: 150px;
+}
 /* end of software */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Should cover most mobile devices ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      
+      #navLogo{
+          height: 40px;
+      }
+     #topNav{
+          padding: 1%;
+          /*padding-left: 12%;*/
+          font-size: 1em;
+          background-color: black;
+          height: 60px;
+         margin-bottom: 2%;
+      }
+      #myCarousel{
+          display: none;
+      }
+      #mainContent{
+          margin-top: 5%;
+          
+          
+      }
+      h1{
+          font-size: 2em !important;
+          text-align: left;
+      }
+      h3{
+          font-size: 1em !important;
+      }
+      #title1{
+          text-align: left;
+          margin: 4%;
+          margin-top: 8%;
+      }
+      #pic1{
+          margin-left: 5%;
+          float: none;
+         
+      }
+      #art1{
+         margin-top: 4%;
+          width: 375px;
+          text-align: left;
+          padding-right: 20px;
+          
+      }
+      #pic2{
+          width: 100%;
+          padding-left: 14%;
+      }
+      #nerd{
+          height: 135px;
+      }
+      #art2{
+          margin-top: 4%;
+          width: 375px;
+          text-align: left;
+          padding-right: 20px;
+          margin-left: 0px;
+          
+      }
+      #footer{
+          font-size: .75em !important;
+          /*display: inline-block;*/
+          width: 100%;
+          height: 63px;
+          
+      }
+      #ftNav{
+          padding-left: 0%;
+          width: 80%;
+      }
+      #ftLinks li{
+          padding-left: 0;
+          padding-right: 17%;
+      }
+      #ftLinks{
+          width: 100%;
+      }
+      #description{
+          width: 100%;
+          font-size: 1em !important;
+          margin-top: 18%;
+      }
+      #dropPic{
+          margin-left: 53%;
+      }
+      #buy{
+          font-size: 4vw;
+          width: 100px;
+          margin-top: 0%;
+      }
+      #imagesRight{
+          height: 80%;
+      }
+      #pId{
+          font-size: 4vw !important;
+          margin-top: 20%;
+          width: 100%;
+      }
+      .dropPic{
+          width: 75px;
+      }
+      #picContainer{
+          width: 68%;
+      }
+      #images{
+          width: 125px;
+      }
+      .question{
+          font-size: .8em !important;
+      }
+      .answer{
+          font-size: .7em !important;
+      }
+      #faqContent{
+          margin-left: 0%;
+      }
+      #aboutContent{
+          font-size: 1em;
+           margin-left: 45px;
+          margin-top: 15%;
+      }
+      #aboutUs{
+          width: 300px;
+      }
+      #about{
+         
+      }
+      #loginContent{
+          height: 210px;
+          margin-top: 25%;
+          width: 75%;
+      }
+      #loginNotice{
+          font-size: 5vw !important;
+      }
+      input{
+          font-size: 4vw !important;
+      }
+      #formPart{
+          font-size: 4vw !important;
+      }
+}
+
+/* Portrait 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}

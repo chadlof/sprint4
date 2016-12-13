@@ -54,7 +54,7 @@
     <div id="body" class="container">
         <div class="spacer">
             <div id="loginContent">
-                <h3>Existing users please login</h3>
+                <p id="loginNotice">Existing users please login</h3>
                 <form id="formPart" action="">
                     User Name:  <input type="text" id="username" ><br/><br/>
                     Password:  <input type="password" id="password" ><br/><br/>
@@ -125,6 +125,12 @@
         
    /* <meta http-equiv="refresh" content="5;url=index.html">
    code for the redirect page......add to teh redirect page*/
+        $("#password").keypress(function(event) {
+    if (event.which == 13) {
+        loginFunc();
+       
+     }
+});
     
     </script>
     
