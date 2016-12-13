@@ -585,10 +585,11 @@ input {
           
       }
       #footer{
-          font-size: .75em !important;
-          /*display: inline-block;*/
+          /*font-size: .75em !important;
+          display: inline-block;
           width: 100%;
-          height: 63px;
+          height: 63px;*/
+          display: none;
           
       }
       #ftNav{
@@ -668,6 +669,12 @@ input {
       }
       #consultContainer{
           margin-top: 20%;
+      }
+      .navbar-inverse .navbar-nav>li>a{
+          font-size: 2em;
+      }
+      .navbar-nav>li>a{
+          line-height: 27px;
       }
 }
 
