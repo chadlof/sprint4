@@ -15,7 +15,11 @@ var products = {
             "name":"DEFRAGMENTER 2017",
             "desc":"Is your network slowing down? You may have redundant programs or misplaced folders. With our new defragmentation software, your computer will be running just as efficiently as the day you bought it.",
             "price":"$35.99"
+        },
+        {   "name":"Purchase Software Suite",
+            "desc":"Purchase our entire software suite at a discounted yearly rate. You get these software applications. SPYWARE-B-GONE, MALWARE-AWAY, DEFRAGMENTER 2017",
+            "price":"$120"
         }
-	
+	   
 	]
 }
