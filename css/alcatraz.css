@@ -273,10 +273,10 @@ input {
 
 #dropContainer {
     float: left;
-    width: 10%;
+    width: 12%;
     height: 100%;
     margin: auto;
-    padding-left: 5%;
+    /*padding-left: 5%;*/
     /*border: solid thin red;*/
 }
 #picContainer {
@@ -305,20 +305,33 @@ input {
     margin-top: 50%;
     font-family: warsaw;
     color: black;
-    font-size: 1vw;
+    font-size: 1em;
+    margin-left: 15%;
     width: 100%;
      z-index:99;
+    border-radius: 10px;
 }
 /* Dropdown Button */
 
-.dropbtn {
-    background-color: #cc0000;
-    color: white;
-    margin: auto;
-    font-size: 1.3em;
-    border: none;
-    cursor: pointer;
-    width: 120%;
+.dropbtn{
+   border-top: 1px solid #f0f0f0;
+   background: #cc0000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#0a0505), to(#cc0000));
+   background: -webkit-linear-gradient(top, #0a0505, #cc0000);
+   background: -moz-linear-gradient(top, #0a0505, #cc0000);
+   background: -ms-linear-gradient(top, #0a0505, #cc0000);
+   background: -o-linear-gradient(top, #0a0505, #cc0000);
+   padding: 9.5px 39px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #f2efef;
+   font-size: 1em;
+    width:120%
 }
 /* Dropdown button on hover & focus */
 
