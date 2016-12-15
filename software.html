@@ -70,6 +70,7 @@
                         <a id="link1">SPYWARE-B-GONE</a>
                         <a id="link2">MALWARE-AWAY</a>
                         <a id="link3">DEFRAGMENTER 2017</a>
+                        <a id="link4">Complete Suite</a>
                     </div><!--myDropdown-->
                     </div><!--dropdown-->
                 </div>
@@ -166,6 +167,13 @@
                 document.getElementById("description").innerHTML=unlimitedPro;
                 document.getElementById("buy").style.visibility = 'visible';
                document.getElementById("buy").innerHTML = "BUY NOW!<br>"+products.data[2].price;
+            });
+            document.getElementById("link4").addEventListener("click", function(){
+               var unlimitedPro = products.data[3].name+"<br/><br/>"+products.data[3].desc;
+
+                document.getElementById("description").innerHTML=unlimitedPro;
+                document.getElementById("buy").style.visibility = 'visible';
+               document.getElementById("buy").innerHTML = "BUY NOW!<br>"+products.data[3].price;
             });
                 function popup(){
 

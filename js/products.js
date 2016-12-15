@@ -17,7 +17,7 @@ var products = {
             "price":"$35.99"
         },
         {   "name":"Purchase Software Suite",
-            "desc":"Purchase our entire software suite at a discounted yearly rate. You get these software applications. SPYWARE-B-GONE, MALWARE-AWAY, DEFRAGMENTER 2017",
+            "desc":"Purchase our entire software suite at a discounted yearly rate. You get these software applications. <br /><br />- SPYWARE-B-GONE<br />- MALWARE-AWAY<br />- DEFRAGMENTER 2017",
             "price":"$120"
         }
 	   
